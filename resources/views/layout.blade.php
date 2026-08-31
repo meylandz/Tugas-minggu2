@@ -1,101 +1,85 @@
-@extends('layout')
-
-@section('content')
-<!-- TAMBAHKAN KODE CSS INI -->
-<style>
-  .team-section {
-    /* Membuat background setengah kuning (#f4c150) dan setengah putih */
-    background: linear-gradient(to bottom, #f4c150 55%, #ffffff 45%);
-    padding: 80px 0 50px 0;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-  }
-  .team-title {
-    color: white;
-    font-size: 4rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
-  }
-  .team-subtitle {
-    color: white;
-    font-size: 1.1rem;
-    margin-bottom: 60px;
-  }
-  .team-member img {
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid white; /* Efek list putih */
-    box-shadow: 0 0 0 2px #f4c150, 0 5px 15px rgba(0,0,0,0.1); /* Efek garis kuning di luar */
-    margin-bottom: 20px;
-  }
-  .team-member h4 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 2px;
-  }
-  .team-member .role {
-    font-size: 0.9rem;
-    color: #888;
-    font-style: italic;
-    margin-bottom: 15px;
-  }
-  .team-member .desc {
-    font-size: 0.85rem;
-    color: #999;
-    padding: 0 15px;
-    line-height: 1.6;
-  }
-</style>
-
-<!-- BAGIAN SECTION KELOMPOK 2 -->
-<section class="team-section">
-  <div class="container-fluid">
-    <h1 class="team-title">Kelompok 2</h1>
-    <p class="team-subtitle">Tugas Minggu 2 - Framework Laravel 12</p>
-
-    <div class="row mt-4">
-      <!-- Anggota 1 -->
-      <div class="col-lg-3 col-md-6 team-member mb-4">
-        <img src="https://ui-avatars.com/api/?name=Mey+Lujeng&background=random&size=200" alt="Mey Lujeng">
-        <h4>Mey Lujeng Trisnawati</h4>
-        <div class="role">Anggota Kelompok</div>
-        <p class="desc">Berperan dalam menyusun struktur view dan routing dasar pada project ini.</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tugas Minggu 2 - Kelompok 2</title>
+    
+    <!-- Memanggil CSS menggunakan helper asset() Laravel -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="{{ asset('css/all.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/templatemo-style.css') }}" />
+  </head>
+  
+  <body>
+    <!-- MENU NAVIGASI (Tambahan agar bisa pindah halaman) -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Tugas Kelompok 2</a>
+        <!-- Tombol untuk tampilan HP -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/biodata">Biodata</a></li>
+            <li class="nav-item"><a class="nav-link" href="/pendidikan">Pendidikan</a></li>
+            <li class="nav-item"><a class="nav-link" href="/prestasi">Prestasi</a></li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-      <!-- Anggota 2 -->
-      <div class="col-lg-3 col-md-6 team-member mb-4">
-        <img src="https://ui-avatars.com/api/?name=Muhamad+Nauval&background=random&size=200" alt="Muhamad Nauval">
-        <h4>Muhamad Nauval Zdakwan U.</h4>
-        <div class="role">Anggota Kelompok</div>
-        <p class="desc">Berperan dalam mengatur layout dan implementasi desain template Bootstrap.</p>
-      </div>
+    <!-- TEMPAT KONTEN UTAMA (Akan diisi oleh view lain seperti home, biodata, dll) -->
+    @yield('content')
 
-      <!-- Anggota 3 -->
-      <div class="col-lg-3 col-md-6 team-member mb-4">
-        <img src="https://ui-avatars.com/api/?name=Muhammad+Syahrul&background=random&size=200" alt="Muhammad Syahrul">
-        <h4>Muhammad Syahrul M.</h4>
-        <div class="role">Anggota Kelompok</div>
-        <p class="desc">Berperan dalam integrasi Git dan memastikan versi project berjalan lancar.</p>
-      </div>
-
-      <!-- Anggota 4 -->
-      <div class="col-lg-3 col-md-6 team-member mb-4">
-        <img src="https://ui-avatars.com/api/?name=Sofia+Meidiana&background=random&size=200" alt="Sofia Meidiana">
-        <h4>Sofia Meidiana</h4>
-        <div class="role">Anggota Kelompok</div>
-        <p class="desc">Berperan dalam menyusun konten biodata, pendidikan, dan presentasi tugas.</p>
+    <!-- FOOTER BAWAAN TEMPLATE -->
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <footer class="col-12">
+          <p class="text-center tm-copyright-text">
+            Copyright 2019 Mini Profile Page 
+            - Design: <a rel="nofollow" href="https://www.facebook.com/templatemo">TemplateMo</a>
+          </p>
+        </footer>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- BAGIAN MINI PROFILE LAMA (Meja Kayu) DI BAWAHNYA -->
-<section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-01.jpg">
-   <!-- ... (Kode bawaan dari template untuk bagian welcome/meja kayu taruh di sini) ... -->
-</section>
-@endsection
+    <!-- SCRIPT BAWAAN TEMPLATE -->
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/parallax.min.js') }}"></script>
+    <!-- Tambahan JS Bootstrap untuk menu navigasi di mode HP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+    
+    <script>
+      function detectMsBrowser() {
+        using_ms_browser =
+          navigator.appName == "Microsoft Internet Explorer" ||
+          (navigator.appName == "Netscape" && navigator.appVersion.indexOf("Edge") > -1) ||
+          (navigator.appName == "Netscape" && navigator.appVersion.indexOf("Trident") > -1);
+
+        if (using_ms_browser == true) {
+          alert("Please use Chrome or Firefox for the best browsing experience!");
+        }
+      }
+      function setBrandMarginTop() {
+        var bottomContainerHeight = $(".tm-welcome-container").height();
+        $(".tm-brand-container-outer").css({
+          "margin-top": -bottomContainerHeight + "px"
+        });
+      }
+
+      $(function() {
+        setBrandMarginTop();
+        detectMsBrowser();
+
+        $(window).resize(function() {
+          setBrandMarginTop();
+        });
+      });
+    </script>
+  </body>
+</html>
