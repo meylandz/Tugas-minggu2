@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riwayat Pendidikan - Muhamad Nauval Zdakwan Utomo</title>
+    <title>Riwayat Pendidikan Anggota Kelompok</title>
     <!-- CSS Dependencies -->
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/all.min.css') }}">
@@ -11,75 +11,121 @@
 </head>
 <body>
 
-    <!-- Hero / Parallax Section -->
+    <!-- Hero Section -->
     <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('img/mini-profile-bg-01.jpg') }}">
         <div class="container text-center py-5 text-white">
             <h1 class="display-4 font-weight-bold"><i class="fas fa-graduation-cap mr-2"></i>Riwayat Pendidikan</h1>
-            <p class="lead">Jejak langkah akademik dari Sekolah Dasar hingga Sekolah Menengah Kejuruan.</p>
+            <p class="lead">Perjalanan Akademik Seluruh Anggota Kelompok</p>
         </div>
     </div>
 
     <!-- Content Section -->
     <div class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="card shadow-sm border-0">
-                    <div class="card-body p-4">
-                        <h3 class="card-title text-primary mb-4 border-bottom pb-2">
-                            <i class="fas fa-history mr-2"></i>Timeline Pendidikan Akademik
-                        </h3>
+        <div class="row">
 
-                        <!-- Timeline Item 1: SMK -->
-                        <div class="media mb-4">
-                            <div class="mr-3 text-primary fa-2x">
-                                <i class="fas fa-school"></i>
-                            </div>
-                            <div class="media-body">
-                                <h5 class="mt-0 font-weight-bold">SMKN 1 Beji</h5>
-                                <p class="text-muted mb-1"><small><i class="far fa-calendar-alt mr-1"></i> Sekolah Menengah Kejuruan</small></p>
-                                <p class="mb-0">Menempuh pendidikan kejuruan di SMKN 1 Beji untuk mendalami bidang keahlian teknologi dan kejuruan.</p>
-                            </div>
-                        </div>
-
+            <!-- 1. Mey Lujeng Trisnawati -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary"><i class="fas fa-user-degree mr-2"></i>Mey Lujeng Trisnawati</h4>
                         <hr>
-
-                        <!-- Timeline Item 2: SMP -->
-                        <div class="media mb-4">
-                            <div class="mr-3 text-success fa-2x">
-                                <i class="fas fa-book-reader"></i>
-                            </div>
-                            <div class="media-body">
-                                <h5 class="mt-0 font-weight-bold">SMPN 2 Beji</h5>
-                                <p class="text-muted mb-1"><small><i class="far fa-calendar-alt mr-1"></i> Sekolah Menengah Pertama</small></p>
-                                <p class="mb-0">Menyelesaikan pendidikan tingkat menengah pertama di SMPN 2 Beji.</p>
-                            </div>
-                        </div>
-
-                        <hr>
-
-                        <!-- Timeline Item 3: SD -->
-                        <div class="media">
-                            <div class="mr-3 text-warning fa-2x">
-                                <i class="fas fa-child"></i>
-                            </div>
-                            <div class="media-body">
-                                <h5 class="mt-0 font-weight-bold">SDN Beji 1</h5>
-                                <p class="text-muted mb-1"><small><i class="far fa-calendar-alt mr-1"></i> Sekolah Dasar</small></p>
-                                <p class="mb-0">Menempuh masa pendidikan dasar pertama di SDN Beji 1.</p>
-                            </div>
-                        </div>
-
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">
+                                <i class="fas fa-school text-primary mr-2"></i>
+                                <strong>SMK:</strong> SMK Bhakti Indonesia Medika
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-book-reader text-success mr-2"></i>
+                                <strong>SMP:</strong> SMPN 5 Kota Mojokerto
+                            </li>
+                            <li>
+                                <i class="fas fa-child text-warning mr-2"></i>
+                                <strong>SD:</strong> SDN Gunung Gedangan 1
+                            </li>
+                        </ul>
                     </div>
                 </div>
-
-                <!-- Tombol Navigasi -->
-                <div class="text-center mt-4">
-                    <a href="{{ url('/') }}" class="btn btn-secondary px-4">
-                        <ins><i class="fas fa-arrow-left mr-2"></i>Kembali ke Beranda</ins>
-                    </a>
-                </div>
-
             </div>
+
+            <!-- 2. Muhammad Syahrul Mubarok -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary"><i class="fas fa-user-degree mr-2"></i>Muhammad Syahrul Mubarok</h4>
+                        <hr>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">
+                                <i class="fas fa-school text-primary mr-2"></i>
+                                <strong>SMK:</strong> SMKN 1 Beji
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-book-reader text-success mr-2"></i>
+                                <strong>MTs:</strong> MTsN 2 Pasuruan
+                            </li>
+                            <li>
+                                <i class="fas fa-child text-warning mr-2"></i>
+                                <strong>MI:</strong> MIN 1 Pasuruan
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Sofia Meidiana -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary"><i class="fas fa-user-degree mr-2"></i>Sofia Meidiana</h4>
+                        <hr>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">
+                                <i class="fas fa-school text-primary mr-2"></i>
+                                <strong>SMK:</strong> SMKN Kasiman
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-book-reader text-success mr-2"></i>
+                                <strong>SMP:</strong> SMPN Kasiman
+                            </li>
+                            <li>
+                                <i class="fas fa-child text-warning mr-2"></i>
+                                <strong>SD:</strong> SDN Ngaglik 1
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Muhamad Nauval Zdakwan Utomo -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary"><i class="fas fa-user-degree mr-2"></i>Muhamad Nauval Zdakwan Utomo</h4>
+                        <hr>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">
+                                <i class="fas fa-school text-primary mr-2"></i>
+                                <strong>SMK:</strong> SMKN 1 Beji
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-book-reader text-success mr-2"></i>
+                                <strong>SMP:</strong> SMPN 2 Beji
+                            </li>
+                            <li>
+                                <i class="fas fa-child text-warning mr-2"></i>
+                                <strong>SD:</strong> SDN Beji 1
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Tombol Navigasi -->
+        <div class="text-center mt-3">
+            <a href="{{ url('/') }}" class="btn btn-secondary px-4">
+                <i class="fas fa-arrow-left mr-2"></i>Kembali ke Beranda
+            </a>
         </div>
     </div>
 
